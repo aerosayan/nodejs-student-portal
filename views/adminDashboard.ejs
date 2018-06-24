@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Student portal | Dashboard</title>
+  <meta name="description" content="Admin page">
+  <meta name="author" content="Sayan Bhattacharjee a.k.a zehel2892">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="skeleton/css/normalize.css">
+  <link rel="stylesheet" href="skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="skeleton/css/customstyle.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CONTAINER STARTS HERE -->
+  <div class="container">
+    <div class="row">
+      <div class="u-full-width" style="margin-top: 15%">
+        <h2 id="welcome"><strong>Admin dashboard</strong></h2>
+        <hr>
+      </div>
+    </div>
+    <a id="log-out" class="button u-pull-right" href="logout">Log out</a>
+
+
+    <strong>Please verify these students as valid</strong>
+    <% if(messages.length>0) { %>
+<ul>
+
+  <% messages.forEach(function(studentUser) { %>
+    <li><a href="/adminIndex/<%=studentUser.registrationNumber%>" class="link"><%= studentUser.registrationNumber%></a></li>
+  <% }) %>
+
+  <% } %>
+</ul>
+
+
+
+  </div>
+  <!-- CONTAINER ENDS HERE -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

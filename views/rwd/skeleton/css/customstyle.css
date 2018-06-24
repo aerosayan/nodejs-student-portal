@@ -1,0 +1,118 @@
+/*
+ font-face raleway_thin_webfont
+ */
+ @font-face{
+ 	font-family: "raleway_thin_webfont";
+ 	src:url('../../fonts/raleway_thin_webfont.ttf') format('truetype');
+ 	
+ 	
+ }
+ 
+/*
+	@font-face "aargh" as elegant_webfont
+*/
+ @font-face{
+ 	font-family:"elegant_webfont";
+ 	src:url('../../fonts/Aaargh.ttf') format('truetype');
+ }
+/*
+	font icons
+
+*/
+
+
+ 
+ 
+ /*
+ 	welcome friend style
+ 	*/
+ #welcome{
+ 	font-family: "raleway_thin_webfont";
+ 	text-align: center;
+ }
+/*
+ class centered
+*/
+.centered{
+	text-align: center;
+	margin: 0px auto;
+	
+}
+
+/*
+ motivatonal thoughts
+*/
+.motivation{ 
+text-align: center;
+color: #A6A6A6; /*light gray*/
+font-family: "raleway_thin_webfont",serif,sans-serif;
+font-size: 160%;
+font-weight: 600;
+}
+/*
+	sign in buton
+*/
+#sign-in{
+	margin: 10% auto 0px auto;
+	border-radius:20px;
+    text-decoration: none;
+}
+/*
+	sign up button
+*/
+#sign-up{
+	text-decoration: none;
+}
+/*
+ *link abstraction
+ */
+.link{
+	text-decoration: none;
+}
+/*
+	navigation bar
+*/
+.navigation-bar {
+   margin: 0;
+   padding: 0px;;
+}
+.navigation-bar li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 4px;
+	margin: 0px;
+
+	
+
+}
+.navigation-bar li a{
+	text-decoration: none;
+	color: black;
+}
+.navigation-bar li a:hover{
+	color:#33C3F0; /* skeleton blue */
+}
+/*
+ text class
+ */
+ .text{
+ 	font-family:"elegant_webfont";
+ 	font-size:100%;
+ 	letter-spacing:1px;
+ 	font-weight:lighter;
+ }
+ /*
+  *smart way to use raleway font :
+  *Just assign a class raleway to the item
+*/
+.raleway{
+   font-family: "raleway_thin_webfont",serif,sans-serif;
+}
+
+/*
+ *mid-way:
+ *smart class to limit the size of form to 768 px
+*/
+.mid-width{
+	max-width: 500px;
+}

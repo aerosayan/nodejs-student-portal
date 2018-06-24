@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Student portal | Dashboard</title>
+  <meta name="description" content="Admin page">
+  <meta name="author" content="Sayan Bhattacharjee a.k.a zehel2892">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../skeleton/css/normalize.css">
+  <link rel="stylesheet" href="../skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="../skeleton/css/customstyle.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CONTAINER STARTS HERE -->
+  <div class="container">
+    <div class="row">
+      <div class="u-full-width" style="margin-top: 15%">
+        <h2 id="welcome"><strong>Admin dashboard</strong></h2>
+        <hr>
+      </div>
+    </div>
+    <a id="log-out" class="button u-pull-right" href="logout">Log out</a>
+
+
+    <strong>Current Student profile</strong>
+<ul>
+  <% studentProfile.forEach(function(studentUser) { %>
+    <li>Name               :<%=studentUser.name%></li>
+    <li>Registration Number:<%=studentUser.registrationNumber%></li>
+    <li>Degree             :<%=studentUser.degree%></li>
+    <li>Department         :<%=studentUser.department%></li>
+    <li>validStudent       :<%=studentUser.validStudent%></li>
+    <li>isAdmin            :<%=studentUser.isAdmin%></li>
+  <% }) %>
+</ul>
+    <strong>Modify Student profile here...........</strong>
+    <br>
+<form autocomplete="off" method="post">
+    <label for="validStudent">validStudent</label>
+    <input type="text" id="validStudent" name="validStudent" placeholder="true or false">
+
+
+    <div class="centered">
+  <input class="button-primary " name="Save Profile" value="Save Profile" type="submit">
+  </div>
+
+</form>
+
+
+  </div>
+  <!-- CONTAINER ENDS HERE -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
