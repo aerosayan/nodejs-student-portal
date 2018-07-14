@@ -7,8 +7,6 @@ A student registration and annonymous feedback submission system for curriculum 
 # Email   : aero.sayan@gmail.com
 #### LICENSE : DEFAULT , for now; will change to GPL V 2.0 soon.
 
-![captain](memes/captain.jpg)</br>
-Big fan of Barkhad Abdi.
 
 
 #### Status  : This is one of my oldest work, and I have already forgotten most of nodejs, but obviously can re-learn in a few days, if I need to build something amazing. Currently not in development since, I am currently focussed on something amazing !
@@ -20,8 +18,6 @@ Big fan of Barkhad Abdi.
 Why am I sharing ?</br>
 -> Nodejs tutorials while very illuminating, have a very steep learning curve. Thus I am sharing this to give an example of an implementation of a basic user registration and management server using the MEAN stack. Also, I may need to come back to it to learn the basics of MEAN stack again. :) </br>
 
-![smart-kid](memes/inquisitive-kid.jpg)</br>
-Amazing inquisitive kid.
 
 <hr>
 <h3> How to start the portal?</h3>
@@ -37,7 +33,7 @@ Amazing inquisitive kid.
 <li> Install all the dependencies from <em>package.json</em> by typing <code>npm install</code> </li>
 
 ![forest-grump](memes/grump.jpg)</br>
-He is Tom Hanks. But to me alwasys Forest Gump.
+He is Tom Hanks. But to me, always Forrest Gump.
 
 <li> Start the NODE.js app using <code>node app.js</code></li>
 <li> Open a web browser and visit the link <a href="http://localhost:3000">http://localhost:3000</a><li>
